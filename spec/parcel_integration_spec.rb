@@ -9,10 +9,10 @@ describe('the parcel path', {:type => :feature}) do
     fill_in('length', :with => 2)
     fill_in('width', :with => 4)
     fill_in('height', :with => 3)
-    fill_in('speed', :with => "fast")
-    fill_in('weight', :with => "heavy")
-    fill_in('distance', :with => "international" )
+    choose('Fast shipping')
+    choose('Over 30lbs')
+    choose('International Shipping')
     click_button('Caculate your shipping cost!')
-    expect(page).to have_contenct("Your Package costs $11")
+    expect(page).to have_content("Your Package costs $11")
   end
 end
