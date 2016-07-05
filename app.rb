@@ -8,12 +8,9 @@ get('/') do
 end
 
 get('/results') do
-  length = params.fetch('length')
-  length = length.to_i()
-  width = params.fetch('width')
-  width = width.to_i()
-  height = params.fetch('height')
-  height = height.to_i()
+  length = params.fetch('length').to_i()
+  width = params.fetch('width').to_i()
+  height = params.fetch('height').to_i()
   speed = params.fetch('speed')
   weight = params.fetch('weight')
   distance = params.fetch('distance')
