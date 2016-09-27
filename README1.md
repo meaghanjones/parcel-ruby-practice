@@ -4,7 +4,7 @@
 
 ## Description
 
-1.Create a Parcel class.
+1. Create a Parcel class.
 2. You should be able to create a new parcel and specify the dimensions and weight in the arguments.
 3. When you call volume on an instance, it should return the product of the sides.
 4. When you call the cost_to_ship method on your parcel, return a cost based on a formula you make up (you might consider factors like speed of delivery, distance, dimensions, weight).
